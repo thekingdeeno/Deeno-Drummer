@@ -1,70 +1,4 @@
-// function playSound1() {
-//     var sound = document.querySelectorAll("audio")[0];
-//     sound.play();
-//   }
-
-//   function playSound2() {
-//     var sound = document.querySelectorAll("audio")[1];
-//     sound.play();
-//   }
-
-//   function playSound3() {
-//     var sound = document.querySelectorAll("audio")[2];
-//     sound.play();
-//   }
-
-//   function playSound4() {
-//     var sound = document.querySelectorAll("audio")[3];
-//     sound.play();
-//   }
-
-//   function playSound5() {
-//     var sound = document.querySelectorAll("audio")[4];
-//     sound.play();
-//   }
-
-//   function playSound6() {
-//     var sound = document.querySelectorAll("audio")[5];
-//     sound.play();
-//   }
-
-//   function playSound7() {
-//     var sound = document.querySelectorAll("audio")[6];
-//     sound.play();
-//   }
-
-//   document.addEventListener('keydown', (event) => {
-//     if (event.key === 'w') {
-//         console.log(playSound1());  
-//     }
-    
-//     if (event.key === 'a') {
-//         console.log(playSound2());
-//     }
-
-//     if (event.key === 's') {
-//       console.log(playSound3());
-//     }
-
-//     if (event.key === 'd') {
-//       console.log(playSound4()); 
-//     }
-
-//     if (event.key === 'f') {
-//       console.log(playSound5());
-//     }
-
-//     if (event.key === 'g') {
-//       console.log(playSound6());
-//     }
-
-//     if (event.key === 'h') {
-//       console.log(playSound7());
-//     }
-// });
-
- 
-
+// Second Method (More Effective) //
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numberOfDrumButtons; i++) {
     
@@ -130,66 +64,74 @@ function buttonAnimation(currentKey) {
         activeButton.classList.remove("pressed");
     }, 100)
     console.log(activeButton);
-}
+};
 
 
-                    //Deeper Understanding of addEventListners//
 
 
-// function anotherAddEventListener(typeOfEvent, callback) {
-//     var eventThatHappened = {
-//         typeOfEvent: "keypress",
-//         key: "p",
-//         durationOfKeypress: 2
+// This was the method I used for this project a while back //
+
+// function playSound1() {
+//     var sound = document.querySelectorAll("audio")[0];
+//     sound.play();
+//   }
+
+//   function playSound2() {
+//     var sound = document.querySelectorAll("audio")[1];
+//     sound.play();
+//   }
+
+//   function playSound3() {
+//     var sound = document.querySelectorAll("audio")[2];
+//     sound.play();
+//   }
+
+//   function playSound4() {
+//     var sound = document.querySelectorAll("audio")[3];
+//     sound.play();
+//   }
+
+//   function playSound5() {
+//     var sound = document.querySelectorAll("audio")[4];
+//     sound.play();
+//   }
+
+//   function playSound6() {
+//     var sound = document.querySelectorAll("audio")[5];
+//     sound.play();
+//   }
+
+//   function playSound7() {
+//     var sound = document.querySelectorAll("audio")[6];
+//     sound.play();
+//   }
+
+//   document.addEventListener('keydown', (event) => {
+//     if (event.key === 'w') {
+//         console.log(playSound1());  
+//     }
+    
+//     if (event.key === 'a') {
+//         console.log(playSound2());
 //     }
 
-//     if (typeOfEvent === eventThatHappened.typeOfEvent) {
-//         callback(eventThatHappened);
+//     if (event.key === 's') {
+//       console.log(playSound3());
 //     }
-// }
 
-// anotherAddEventListener("keypress", function(event){
-//     console.log(event);
+//     if (event.key === 'd') {
+//       console.log(playSound4()); 
+//     }
+
+//     if (event.key === 'f') {
+//       console.log(playSound5());
+//     }
+
+//     if (event.key === 'g') {
+//       console.log(playSound6());
+//     }
+
+//     if (event.key === 'h') {
+//       console.log(playSound7());
+//     }
 // });
-
-                //End//
-
-// function HouseKeeper(name, age, sex, nationality, noOfYears){
-// this.name = name;
-// this.age = age;
-// this.sex = sex;
-// this.nationality = nationality;
-// this.noOfYears = noOfYears;
-// this.clean = function cleanHouse(){
-//     alert("Cleaning in progress...")
-// }
-// }
-
-var houseKeeper1 = new HouseKeeper("Agatha", 26, "Female", "Swedish", 4);
-
-var houseKeeper2 = new HouseKeeper("Roberta", 33, "Female", "Mexican", 7);
-
-var houseKeeper3 = new HouseKeeper("Matthew", 22, "Male", "Turkish", 1);
-
-
-            //CALC TOOL//
-
-function sum(no1, no2) {
-    var sum = (no1 + no2);
-    console.log(sum);
-}
-
-function sub(no1, no2) {
-    var sub = (no1 - no2);
-    console.log(sub);
-}
-
-function multi(no1, no2){
-    var multi = (no1 * no2);
-    console.log(multi);
-}
-
-function div(no1, no2){
-    var div = (no1 / no2);
-    console.log(div);
-}
